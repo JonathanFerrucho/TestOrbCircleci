@@ -36,4 +36,3 @@ steps:
         fi
 
         xargs -a "<< parameters.modules >>" yq -y -s 'reduce .[] as $item ({}; . * $item)' | tee "<< parameters.continue-config >>"
-        
