@@ -1,7 +1,7 @@
 version: 2.1
 
 description: >
-  Prueba para publicar un orb de forma priavada, y asi poder usarlo en proyectos personales y evitar duplicadad de codigo 
+  Prueba para publicar un orb de forma priavada, y asi poder usarlo en proyectos personales y evitar duplicadad de codigo
 # What will your orb allow users to accomplish?
 # Descriptions should be short, simple, and informative.
 
