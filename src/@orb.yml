@@ -8,15 +8,3 @@ description: >
 display:
   home_url: "https://github.com/JonathanFerrucho/TestOrbCircleci"
   source_url: "https://github.com/JonathanFerrucho/TestOrbCircleci"
-
-parameters:
-  to:
-    type: string
-    default: "World"
-    description: "Hello to whom?"
-steps:
-  - run:
-      environment:
-        PARAM_TO: <<parameters.to>>
-      name: Hello Greeting
-      command: <<include(scripts/greet.sh)>>
