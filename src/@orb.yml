@@ -1,0 +1,18 @@
+version: 2.1
+
+description: >
+  Sample orb description
+# What will your orb allow users to accomplish?
+# Descriptions should be short, simple, and informative.
+
+parameters:
+  to:
+    type: string
+    default: "World"
+    description: "Hello to whom?"
+steps:
+  - run:
+      environment:
+        PARAM_TO: <<parameters.to>>
+      name: Hello Greeting
+      command: <<include(scripts/greet.sh)>>
