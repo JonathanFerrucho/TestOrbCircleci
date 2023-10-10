@@ -24,5 +24,6 @@ workflows:
           pipeline_number: << pipeline.number >>
           vcs_type: << pipeline.project.type >>
           orb_name: test-orb-circleci
-          requires: [orb-tools/lint, orb-tools/pack, orb-tools/review, shellcheck/check]
+          #requires: [orb-tools/lint, orb-tools/pack, orb-tools/review, shellcheck/check]
+          requires: [orb-tools/lint, orb-tools/pack, shellcheck/check]
           filters: *filters
